@@ -46,6 +46,7 @@ fetch data from json
 
 #--------------------------------_dynamic routing_--------------------------------------------- <br>
 
+      <Link to={`/user/${id}`}>Show Details</Link>
 
       {
         path: '/user/:userId',
@@ -54,3 +55,13 @@ fetch data from json
       }
 
       const user = useLoaderData();
+
+
+#---------------------------------------------_Navigate_------------------------------------
+    const navigate = useNavigate();
+
+    const handleShowDetails= () =>{
+        navigate(`/post/${id}`);
+    }
+
+    <button onClick={handleShowDetails}>ShowDetails</button>
