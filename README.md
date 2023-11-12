@@ -1,4 +1,4 @@
-#-----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------<br>
 Import at main.jsx
 import {
   createBrowserRouter,
@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-#-----------------------------_Link_-----------------------------------------------
+#-----------------------------_Link_-----------------------------------------------<br>
 #insted of a tag
 
 <nav>
@@ -32,7 +32,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 change the specific area
 
 
-#--------------------------------_fetch data_---------------------------------------------
+#--------------------------------_fetch data_---------------------------------------------<br>
 fetch data from json
       {
         path: '/user',
@@ -41,3 +41,16 @@ fetch data from json
       }
 
     const users = useLoaderData(); // receiving function
+
+
+
+#--------------------------------_dynamic routing_--------------------------------------------- <br>
+
+
+      {
+        path: '/user/:userId',
+        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+        element: <UserDetails></UserDetails>
+      }
+
+      const user = useLoaderData();
