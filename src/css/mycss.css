@@ -16,3 +16,8 @@ nav a{
     margin: 15px;
     border-radius: 20px;
 }
+
+nav a.active{
+    text-decoration: underline;
+    color: darkgray;
+}
