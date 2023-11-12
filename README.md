@@ -1,4 +1,4 @@
-
+#-----------------------------------------------------------------------------
 Import at main.jsx
 import {
   createBrowserRouter,
@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-
+#-----------------------------_Link_-----------------------------------------------
 #insted of a tag
 
 <nav>
@@ -30,3 +30,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 #outlet 
 change the specific area
+
+
+#--------------------------------_fetch data_---------------------------------------------
+fetch data from json
+      {
+        path: '/user',
+        loader: ()=> fetch('https://jsonplaceholder.typicode.com/users'),
+        element: <User></User>
+      }
+
+    const users = useLoaderData(); // receiving function
