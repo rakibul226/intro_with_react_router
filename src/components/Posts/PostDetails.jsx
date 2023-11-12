@@ -8,7 +8,6 @@ const PostDetails = () => {
             navigate(-1);
     }
 
-    console.log(PostDetails);
     const {id,body} = PostDetails;
     return (
         <div>

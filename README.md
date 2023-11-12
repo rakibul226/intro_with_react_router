@@ -60,8 +60,12 @@ fetch data from json
 #---------------------------------------------_Navigate_------------------------------------
     const navigate = useNavigate();
 
+    const handleNavigate = () => {
+            navigate(-1);
+    }
+    <button onClick={handleNavigate}>Go back</button>
+
     const handleShowDetails= () =>{
         navigate(`/post/${id}`);
     }
-
     <button onClick={handleShowDetails}>ShowDetails</button>
