@@ -1,3 +1,4 @@
+<pre>
 #-----------------------------------------------------------------------------<br>
 Import at main.jsx
 import {
@@ -18,6 +19,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
+
+
 #-----------------------------_Link_-----------------------------------------------<br>
 #insted of a tag
 
@@ -32,6 +35,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 change the specific area
 
 
+
+
 #--------------------------------_fetch data_---------------------------------------------<br>
 fetch data from json
       {
@@ -41,6 +46,8 @@ fetch data from json
       }
 
     const users = useLoaderData(); // receiving function
+
+
 
 
 
@@ -57,6 +64,8 @@ fetch data from json
       const user = useLoaderData();
 
 
+
+
 #---------------------------------------------_Navigate_------------------------------------
     const navigate = useNavigate();
 
@@ -69,3 +78,5 @@ fetch data from json
         navigate(`/post/${id}`);
     }
     <button onClick={handleShowDetails}>ShowDetails</button>
+
+    </pre>
